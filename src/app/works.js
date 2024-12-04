@@ -3,7 +3,7 @@ import Image from "next/image";
 const Works = (props) => {
     return ( 
         <div>
-            <a href={props.link}>
+            <a href={props.link} target="_blank">
         <div style={{ display:'flex', justifyContent:'space-between', }} className="works">
             <div style={{width:"22%", height:'auto', borderRadius:'10px', boxShadow:'4px 10px 10px lightgrey'}} className="image">
                 <Image src={props.image} style={{width:'100%', height:'80%'}}></Image>

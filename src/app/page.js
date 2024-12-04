@@ -41,7 +41,7 @@ export default function Home() {
           <hr />
           <Works title={'Car Servicing Agency Website'} year={'2024'} subtitle={'Full Website'} image={vertron} link={'https://vertron-seven.vercel.app/'}/>
           <hr />
-          <Works title={'36 Days of Malayalam type'} year={'2024'} subtitle={'Typography'}/>
+          <Works title={'Lorem Ipsum'} year={'2024'} subtitle={'Lorem Ipsum'}/>
           <hr />
         </div>
       </section>
