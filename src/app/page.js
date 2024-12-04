@@ -37,9 +37,9 @@ export default function Home() {
           <h1>Featured Works</h1>
         </div>
         <div className="works" style={{width:'70%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:'60vw'}}>
-          <Works title={'Traflagar Landing Page'} year={'2024'} subtitle={'Landing page'} image={trafalgar} link={'https://trafalgar-landing-page-xi.vercel.app/'}/>
+          <Works title={'Traflagar Landing Page'} year={'2024'} subtitle={'Only Landing page'} image={trafalgar} link={'https://trafalgar-landing-page-xi.vercel.app/'}/>
           <hr />
-          <Works title={'Car Servicing Agency Website'} year={'2024'} subtitle={'Website'} image={vertron} link={'https://vertron-seven.vercel.app/'}/>
+          <Works title={'Car Servicing Agency Website'} year={'2024'} subtitle={'Full Website'} image={vertron} link={'https://vertron-seven.vercel.app/'}/>
           <hr />
           <Works title={'36 Days of Malayalam type'} year={'2024'} subtitle={'Typography'}/>
           <hr />
