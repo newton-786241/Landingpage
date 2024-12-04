@@ -1,95 +1,50 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navbar from "./navbar";
+import Blogscard from "./Blogscard";
+import Works from "./works";
+import Footer from "./footer";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div>
+    <Navbar/>
+      <div style={{width:'40%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:"300px", margin:'120px 250px',}}>
+        <div>
+          <h1>Hi, I am Tamseel,</h1>
+          <h1>A Frontend Developer and UI/UX Designer</h1>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum distinctio culpa, obcaecati laudantium animi nostrum maxime saepe impedit nulla, neque reiciendis cum odit optio quibusdam dolore ipsam ratione vero nam. Sequi aliquam nisi non.
+        </p>
+        <button style={{width:'50%',color:"white", height:'45px', fontSize:'24px', backgroundColor:'red', padding:'0px 10px', borderRadius:'10px', border:'none'}}>Download Resume</button>
+      </div>
+      <div style={{backgroundColor:'aliceblue',height:'35vw', display:'flex', flexDirection:'column', alignItems:'center'}}>
+        <div style={{display:'flex', justifyContent:'space-between', width:'70%',margin:'30px 0px', padding:"50px 0px",}}>
+          <h2>Recent posts</h2>
+          <a href="">View all</a>
+        </div>
+        <div style={{width:'70%'}}>
+          <div style={{margin:"0px 0px", width:'100%', display:'flex', justifyContent:"space-between"}}>
+            <Blogscard title={'Making a design system from scratch'} date={'12-12-2024'} tldr={'Design, Coding'}/>
+            <Blogscard title={'Creating Pixel Perfect Icons in Figma'} date={'12-12-2022'} tldr={'Figma, Icon Design'}/>
+          </div>
+        </div>
+      </div>
+      <section className="works" style={{alignItems:'center', display:"flex", flexDirection:'column'}}>
+        <div style={{width:'70%', margin:'50px 0px'}}>
+          <h1>Featured Works</h1>
+        </div>
+        <div className="works" style={{width:'70%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:'60vw'}}>
+          <Works title={'Designing Dashboards'} year={'2023'} subtitle={'Dashboard'}/>
+          <hr />
+          <Works title={'Vibrant portraits of 2022'} year={'2023'} subtitle={'Illustration'}/>
+          <hr />
+          <Works title={'36 Days of Malayalam type'} year={'2024'} subtitle={'Typography'}/>
+          <hr />
+        </div>
+      </section>
+      <div style={{justifyContent:'center', display:'flex'}}>
+      <Footer/></div>
+      </div>  
   );
 }
