@@ -24,3 +24,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.works:hover{
+  width: 105%;
+}
+.works{
+  width: 100%;
+}

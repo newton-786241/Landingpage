@@ -4,6 +4,8 @@ import Navbar from "./navbar";
 import Blogscard from "./Blogscard";
 import Works from "./works";
 import Footer from "./footer";
+import trafalgar from './Screenshot (2).png'
+import vertron from './Screenshot (3).png'
 
 export default function Home() {
   return (
@@ -35,9 +37,9 @@ export default function Home() {
           <h1>Featured Works</h1>
         </div>
         <div className="works" style={{width:'70%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:'60vw'}}>
-          <Works title={'Designing Dashboards'} year={'2023'} subtitle={'Dashboard'}/>
+          <Works title={'Traflagar Landing Page'} year={'2024'} subtitle={'Landing page'} image={trafalgar} link={'https://trafalgar-landing-page-xi.vercel.app/'}/>
           <hr />
-          <Works title={'Vibrant portraits of 2022'} year={'2023'} subtitle={'Illustration'}/>
+          <Works title={'Car Servicing Agency Website'} year={'2024'} subtitle={'Website'} image={vertron} link={'https://vertron-seven.vercel.app/'}/>
           <hr />
           <Works title={'36 Days of Malayalam type'} year={'2024'} subtitle={'Typography'}/>
           <hr />
