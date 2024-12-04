@@ -12,7 +12,7 @@ export default function Home() {
     <div>
     <Navbar/>
     <div style={{display:'flex', }}>
-      <div style={{width:'40%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:"300px", margin:'120px 250px',}}>
+      <div style={{width:'40%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:"25vw", margin:'5vw 15vw',}}>
         <div>
           <h1 style={{fontSize:"2vw"}}>Hi, I am Tamseel,</h1>
           <h1 style={{fontSize:'2vw'}}>A Frontend Developer and UI/UX Designer</h1>
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div style={{backgroundColor:'aliceblue',height:'35vw', display:'flex', flexDirection:'column', alignItems:'center'}}>
         <div style={{display:'flex', justifyContent:'space-between', width:'70%',margin:'2vw 0px', padding:"2vw 0px",}}>
-          <h2>Recent posts</h2>
+          <h2 style={{fontSize:'2vw'}}>Recent posts</h2>
           <a href="">View all</a>
         </div>
         <div style={{width:'70%'}}>
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <section className="works" style={{alignItems:'center', display:"flex", flexDirection:'column'}}>
         <div style={{width:'70%', margin:'50px 0px'}}>
-          <h1>Featured Works</h1>
+          <h1 style={{fontSize:'2vw'}}>Featured Works</h1>
         </div>
         <div className="works" style={{width:'70%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:'60vw'}}>
           <Works title={'Traflagar Landing Page'} year={'2024'} subtitle={'Only Landing page'} image={trafalgar} link={'https://trafalgar-landing-page-xi.vercel.app/'}/>

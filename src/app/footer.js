@@ -8,12 +8,12 @@ const Footer = () => {
     return ( 
         <div style={{width:'20%'}}>
         <div style={{display:'flex', justifyContent:'space-between', width:'100%', marginTop:'7vw', marginBottom:'1vw'}}>
-            <Image src={myimage}></Image>
-            <Image src={insta}></Image>
-            <Image src={twitter}></Image>
-            <Image src={linkedin}></Image>
+            <Image src={myimage} style={{width:'2vw', height:'auto'}}></Image>
+            <Image src={insta} style={{width:'2vw', height:'auto'}}></Image>
+            <Image src={twitter} style={{width:'2vw', height:'auto'}}></Image>
+            <Image src={linkedin} style={{width:'2vw', height:'auto'}}></Image>
         </div>
-        <p style={{textAlign:'center', marginBottom:'2vw'}}>Copyright c 2020 All Rights Reserved</p>
+        <p style={{textAlign:'center', marginBottom:'1.4vw'}}>Copyright c 2020 All Rights Reserved</p>
         </div>
      );
 }
