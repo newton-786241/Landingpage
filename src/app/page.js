@@ -11,17 +11,20 @@ export default function Home() {
   return (
     <div>
     <Navbar/>
+    <div style={{display:'flex', }}>
       <div style={{width:'40%', display:'flex', flexDirection:'column', justifyContent:'space-around', height:"300px", margin:'120px 250px',}}>
         <div>
-          <h1>Hi, I am Tamseel,</h1>
-          <h1>A Frontend Developer and UI/UX Designer</h1>
+          <h1 style={{fontSize:"2vw"}}>Hi, I am Tamseel,</h1>
+          <h1 style={{fontSize:'2vw'}}>A Frontend Developer and UI/UX Designer</h1>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum distinctio culpa, obcaecati laudantium animi nostrum maxime saepe impedit nulla, neque reiciendis cum odit optio quibusdam dolore ipsam ratione vero nam. Sequi aliquam nisi non.
+        <p style={{fontSize:'1vw'}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum distinctio culpa, obcaecati laudantium animi nostrum maxime saepe impedit nulla, neque reiciendis cum odit optio quibusdam dolore ipsam ratione vero nam. Sequi aliquam nisi non.
         </p>
-        <button style={{width:'50%',color:"white", height:'45px', fontSize:'24px', backgroundColor:'red', padding:'0px 10px', borderRadius:'10px', border:'none'}}>Download Resume</button>
+        <button style={{width:'50%',color:"white", height:'3vw', fontSize:'1.5vw', backgroundColor:'red', padding:'0px 10px', borderRadius:'10px', border:'none'}}>Download Resume</button>
+        <div style={{width:'40%'}}></div>
+      </div>
       </div>
       <div style={{backgroundColor:'aliceblue',height:'35vw', display:'flex', flexDirection:'column', alignItems:'center'}}>
-        <div style={{display:'flex', justifyContent:'space-between', width:'70%',margin:'30px 0px', padding:"50px 0px",}}>
+        <div style={{display:'flex', justifyContent:'space-between', width:'70%',margin:'2vw 0px', padding:"2vw 0px",}}>
           <h2>Recent posts</h2>
           <a href="">View all</a>
         </div>
